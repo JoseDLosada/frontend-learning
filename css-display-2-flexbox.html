@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .conteiner{
+            /* El display flex solo se coloca en los contenedores en los padres, si los child son padres tambien se debe colocar el dysplay. Siempre que haya un padre se debe colocar un padre */
+            display: flex;
+            background: papayawhip;
+            justify-content: center;
+            /* justify alinio de izquierda a derecha, pero se si se cambia el eje central o fundamental este se va aliar repecto al eje central */
+            align-items: center;
+            flex-direction: column;
+            /* Usando el flex-direction "Column" "Row" podemos cambiar el eje central de la pagina */
+
+            height: 400px;
+        }
+        .item{
+            width: 30px;
+            height: 30px;
+            background: purple;
+        }
+        .conteiner .item:nth-child(2n+1){
+            background: cyan;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+</body>
+</html>

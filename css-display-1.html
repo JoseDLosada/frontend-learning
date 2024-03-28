@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0;
+        }
+        div{
+            /* bloque porque ocupa o desplaza todo el espacio de la pagina  */
+            background: salmon;
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+        }
+        a{
+            /* Inline el tamaña es acorde al contenido -> no tiene valides con las propiedades de width and heigth*/
+            background: skyblue;
+            margin: 20px;
+        }
+        button{
+            /* Inline-block -> Es un elemento de vista tipo inline (ocupa solo su espaico necesario) con propiedades de tipo block  */
+            background: slateblue;
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>Estoy en Bloque</div>
+    <a href="/">Estoy inline</a>
+    <button>Soy Inline-Block</button>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Clase de selectores combinados */
+        div p{
+            /* Selector Decendintes */
+            color:lime;
+        }
+        div > div {
+            /* Selectores Hijo Directo */
+            background: plum;
+        }
+        .es{
+            background: red;
+        }
+        div + section{
+            /* Selectores Adyacentes */
+            background: palegoldenrod;
+        }
+        div ~ p{
+            /* Selectores General de Hermanos */
+            color: powderblue;
+
+        }
+
+    </style>
+
+</head>
+<body>
+    <div>
+        <div>
+            <p>Jose</p>
+            <div class="es">is</div>
+            <span>awesome</span>
+        </div>
+    </div>
+    <p>Selectors Class</p>
+    <p>Selectors Class</p>
+
+    <div>
+        Master
+    </div>
+    <section>
+        Is the best
+    </section>
+</body>
+</html>

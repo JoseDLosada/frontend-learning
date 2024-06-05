@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            /* Regla de tres para el font-size del body 16px = 100%, redimenzinar quede a 10px = 62.5% 
+            Facilita el trabajo con los rem*/
+            font-size: 62.5%;
+
+        }
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+        }
+        p{
+            /* el body tiene un font-size de 16px el rem toma ese valor como base y lo multiplica por el valor que le demos en este caso 2.5rem = 40px */
+            font-size: 2.5rem;
+        }
+        body {
+            margin: 0;
+        }
+        .container{
+            width: 100vw;
+            /* 100% del viewport width 
+                Que es el viewport width? 
+                Es el ancho de la ventana del navegador 
+            */
+            height: 100vh; 
+            /* 100% del viewport height 
+                Que es el viewport height? 
+                Es el alto de la ventana del navegador 
+            */
+            background: plum;
+        }
+    </style>
+</head>
+<body>
+    <div>Platzi</div>
+    <p>Master</p>
+    <div class="container">
+
+    </div>
+</body>
+</html>
